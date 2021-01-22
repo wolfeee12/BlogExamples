@@ -3,7 +3,7 @@ import json
 
 
 #This project takes the list of tasks and the ID of the someone and assigns the tasks to them	
-def assingIssuesForNewHires(listOfTasks, newHireJiraID):
+def assingIssuesForNewHires(listOfTasks, UserID):
 
         headers =
         {
@@ -13,7 +13,7 @@ def assingIssuesForNewHires(listOfTasks, newHireJiraID):
         }
 
 	payload = json.dumps( {
-	  "accountId": newHireJiraID
+	  "accountId": UserID
 	} )
 	
 	#For each task assign it to the new hire
